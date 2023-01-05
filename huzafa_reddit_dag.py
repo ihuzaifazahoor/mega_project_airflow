@@ -78,7 +78,7 @@ with DAG(
             password="Django.123",
             host="130.211.206.126",
             port="5432",
-            database="reddit_huzaifa",
+            database="reddit_db",
         )
         query_post = "INSERT INTO news_news (hash, ticker, content, likes, author, publish_time, image, created_at, updated_at) VALUES (%s, %s, %s, %s, %s, %s, %s, NOW(), NOW()) ON CONFLICT DO NOTHING;"  # noqa: E501
         query_comment = "INSERT INTO comments_comment (hash, news_id, author, content, likes, publish_time, created_at, updated_at) VALUES (%s, %s, %s, %s, %s, %s, NOW(), NOW()) ON CONFLICT DO NOTHING;"  # noqa: E501
