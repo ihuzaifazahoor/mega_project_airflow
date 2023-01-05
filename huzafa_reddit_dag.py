@@ -76,7 +76,7 @@ with DAG(
         conn = psycopg2.connect(
             user="huzaifa",
             password="Django.123",
-            host="127.0.0.1",
+            host="34.134.157.59",
             port="5432",
             database="reddit_huzaifa",
         )
