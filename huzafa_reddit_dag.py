@@ -2,7 +2,10 @@ from airflow import DAG
 from airflow.decorators import task
 from datetime import datetime
 
-stocks = [{"ticker": "AAPL", "company_name": "Apple"}]
+stocks = [
+    {"ticker": "AAPL", "company_name": "Apple"},
+    {"ticker": "MSFT", "company_name": "Microsoft"},
+]
 
 with DAG(
     dag_id="reddit_pipeline",
